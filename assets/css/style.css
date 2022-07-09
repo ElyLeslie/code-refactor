@@ -1,0 +1,177 @@
+* {box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: white;
+}
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: white;
+
+}
+/*I made sure to make everything flow and put it all under the same line, after experimenting with the size a bit.*/
+header h1 {
+    display: inline-block;
+    font-size: 3em;
+    color: white;
+}
+header section ul{
+    list-style-type: none;
+
+}
+header section ul li {
+    display: inline-block;
+    margin-left: 1.25em;
+}
+
+/*Here, I made the "A" links all white and took out the annoying line underneath!
+I also made them more visible by making the colors white.*/
+
+a {color: white;
+text-decoration: none;}
+
+header section {
+    padding-top: 13px;
+    margin-right: 20px;
+    float: right;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+}
+
+/*Underneath the header goes the .big-picture!*/
+.big-picture {
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    
+}
+/*Let's make the other images look neat as well!*/
+
+.search-engine-optimization img {
+
+    max-height: 12em;
+
+}
+
+.online-reputation-management img {
+    max-height: 12em;
+}
+
+.social-media-marketing img {
+    max-height: 12em;
+}
+
+/*Now it's not absolutely huge anymore, thank God.
+Let's focus on p. This impacts every single paragraph. Make it fashion!*/
+p {
+    font-size: 1em;
+}
+
+/*Earlier in our html code, we put in float-left and float-right classes.
+This was so that it'd be easier to remember how we wanted to label them.
+We alternated between left and right, not only to match the image and our
+requirements, but also to create a pleasing image on-screen that followed
+what I presume to be the rule of 3's.*/
+
+.float-left{
+    float: left;
+    margin-right: 3em;
+}
+
+.float-right {
+    float: right;
+    margin-left: 3em;
+}
+
+/*Now our images are scattered around. They're decently sized, but still
+not exactly how we want them. Let's give them some space from each other
+so the reader has room to breathe*/
+
+/*Rather than copy and paste the same desired code again and again, I decided
+to just list it out and separate the same desired effects with commas*/
+
+.search-engine-optimization,
+.online-reputation-management,
+.social-media-marketing {
+    margin-bottom: 3em;
+    padding: 45px;
+    height: 18em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2a607c;
+    color: white;
+}
+
+/*This is okay, but now the text headers are just a little bit small!*/
+/*Let's CORRECT THIS.*/
+
+.search-engine-optimization h2,
+.online-reputation-management h2,
+.social-media-marketing h2 {
+    font-size: 3em;
+    /*Give it some room from the bottom text, too, for good measure*/
+    margin-bottom: 15px;
+}
+
+/*This is great, but we don't have the space for our contents off to the
+side! So what do we do with the main stuff in the center of our page?*
+BEHOLD.*/
+
+.content {
+    width: 70%;
+    display: inline-block;
+    margin-left: 2em;
+}
+
+/*I decided to put all of the color changes here instead of putting them
+everywhere again and again for each insectionidual subcategory!*/
+.benefits-to-the-side {
+    margin-right: 2em;
+    padding: 20px;
+    float: right;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2a607c;
+    width: 20%;
+    color: white;
+    margin-bottom: 30px;
+}
+
+
+.benefit-lead,
+.benefit-brand,
+.benefit-cost {
+    margin-bottom: 30px;
+    color: white;
+}
+
+.benefit-lead h3,
+.benefit-cost h3,
+.benefit-brand h3 
+{
+margin-bottom: 10px;
+text-align: center;
+}
+
+.benefit-lead img,
+.benefit-brand img,
+.benefit-cost img {
+
+    display: block;
+    margin: 10px auto;
+    max-width: 7.5em;
+}
+
+/*I accomplished the same desired attributes with minimum coding!*/
+footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 2em;
+}
+footer h2 {
+    font-size: 2em;
+}
